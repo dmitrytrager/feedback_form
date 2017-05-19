@@ -4,4 +4,5 @@
 # Example:
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
 
+root to: "feedback#new"
 resource :feedback, only: %i(new create)
