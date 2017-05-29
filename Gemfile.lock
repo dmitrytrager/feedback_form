@@ -47,6 +47,12 @@ GEM
       dry-equalizer (~> 0.2)
       dry-logic (~> 0.4, >= 0.4.0)
       dry-types (~> 0.9, >= 0.9.0)
+    email_spec (2.1.1)
+      htmlentities (~> 4.3.3)
+      launchy (~> 2.1)
+      mail (~> 2.6)
+    faker (1.7.3)
+      i18n (~> 0.5)
     hanami (1.0.0)
       bundler (~> 1.13)
       concurrent-ruby (~> 1.0)
@@ -91,11 +97,15 @@ GEM
     hanami-view (1.0.0)
       hanami-utils (~> 1.0)
       tilt (~> 2.0, >= 2.0.1)
+    htmlentities (4.3.4)
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
+    i18n (0.8.1)
     ice_nine (0.11.2)
     inflecto (0.0.2)
+    launchy (2.4.3)
+      addressable (~> 2.3)
     mail (2.6.5)
       mime-types (>= 1.16, < 4)
     mime-types (3.1)
@@ -170,6 +180,8 @@ PLATFORMS
 DEPENDENCIES
   capybara
   dotenv (~> 2.0)
+  email_spec
+  faker
   hanami (~> 1.0)
   hanami-bootstrap
   hanami-model (~> 1.0)

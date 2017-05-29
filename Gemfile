@@ -22,6 +22,8 @@ end
 group :test, :development do
   gem "dotenv", "~> 2.0"
   gem "rspec-hanami"
+  gem "faker"
+  gem "email_spec"
 end
 
 group :test do
