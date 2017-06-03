@@ -8,10 +8,10 @@ module Web::Controllers::Feedback
 
     params do
       required(:feedback).schema do
-        required(:email).filled(:str, format: Feedback::EMAIL_FORMAT)
+        required(:email).filled(:str?, format?: Feedback::EMAIL_FORMAT)
         optional(:name).filled(:str?)
         required(:message).filled(:str?)
-        optional(:phone).filled(:str?, format: Feedback::PHONE_FORMAT)
+        optional(:phone).filled(:str?, format?: Feedback::PHONE_FORMAT)
       end
     end
 

@@ -1,7 +1,7 @@
-- title("Contact Us")
-- description("Contact the team")
-- keywords("Contact, Email, Touch, Getting in touch")
-- meta robots: "noindex"
+meta content="Contact Us" name="title"
+meta content="Contact the team" name="description"
+meta content="Contact, Email, Touch, Getting in touch" name="keywords"
+meta content="noindex,nofollow" name="robots"
 
 - unless params.valid?
   ul
@@ -14,17 +14,17 @@
 
 .row
   .medium-6.columns
-    = form_for(feedback, url: feedback_path) do |f|
+    = form_for feedback, url: routes.feedback_path  do
 
       legend
         ' Have a question?
         | You may find the answer in the #{link_to("FAQ", "#")}.
 
       .form-inputs
-        = f.input :name
-        = f.input :email
-        = f.input :phone
-        = f.input :message, as: :text
+        = text_field :name
+        = text_field :email
+        = text_field :phone
+        = text_field :message, as: :text
 
       .form-actions
-        = f.button :submit, "Submit"
+        = submit "Submit"
