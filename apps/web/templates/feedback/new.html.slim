@@ -14,17 +14,9 @@ meta content="noindex,nofollow" name="robots"
 
 .row
   .medium-6.columns
-    = form_for feedback, url: routes.feedback_path  do
+    legend
+      ' Have a question?
+      | You may find the answer in the #{link_to "FAQ", "#"}.
+    br
 
-      legend
-        ' Have a question?
-        | You may find the answer in the #{link_to("FAQ", "#")}.
-
-      .form-inputs
-        = text_field :name
-        = text_field :email
-        = text_field :phone
-        = text_field :message, as: :text
-
-      .form-actions
-        = submit "Submit"
+    = form
