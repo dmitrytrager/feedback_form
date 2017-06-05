@@ -5,7 +5,7 @@ module Web::Views::Feedback
     include Web::View
 
     def form
-      form_for feedback, url: routes.feedback_path  do
+      form_for :feedback, routes.feedback_path  do
         div class: "form-inputs" do
           label :name
           text_field :name

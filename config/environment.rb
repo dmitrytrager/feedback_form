@@ -37,6 +37,10 @@ Hanami.configure do
   environment :development do
     # See: http://hanamirb.org/guides/projects/logging
     logger level: :debug
+
+    mailer do
+      delivery :letter_opener
+    end
   end
 
   environment :production do

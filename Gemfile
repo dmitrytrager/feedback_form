@@ -26,6 +26,8 @@ group :test, :development do
   gem "rspec-hanami"
   gem "faker"
   gem "email_spec"
+  gem "byebug"
+  gem "letter_opener"
 end
 
 group :test do

@@ -31,6 +31,7 @@ GEM
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
     builder (3.2.3)
+    byebug (9.0.6)
     capybara (2.14.0)
       addressable
       mime-types (>= 1.16)
@@ -137,6 +138,8 @@ GEM
     inflecto (0.0.2)
     launchy (2.4.3)
       addressable (~> 2.3)
+    letter_opener (1.4.1)
+      launchy (~> 2.2)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.5)
@@ -220,6 +223,7 @@ PLATFORMS
 
 DEPENDENCIES
   actionmailer
+  byebug
   capybara
   dotenv (~> 2.0)
   email_spec
@@ -227,6 +231,7 @@ DEPENDENCIES
   hanami (~> 1.0)
   hanami-bootstrap
   hanami-model (~> 1.0)
+  letter_opener
   minitest
   rake
   rspec-hanami

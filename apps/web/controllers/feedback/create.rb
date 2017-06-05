@@ -17,7 +17,7 @@ module Web::Controllers::Feedback
 
     def call(params)
       if params.valid?
-        ApplicationMailer.feedback(feedback).deliver_now!
+        Mailers::Feedback.deliver(feedback: feedback)
         redirect_to routes.root_path
       else
         self.status = 422
