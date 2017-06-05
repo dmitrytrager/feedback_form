@@ -3,9 +3,9 @@ class Feedback < Hanami::Entity
   PHONE_FORMAT = /\A(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\z/
 
   attributes do
-    attribute :name,       Types::String
-    attribute :email,      Types::String #.constrained(format: EMAIL_FORMAT)
-    attribute :message,    Types::String
-    attribute :phone,      Types::String #.constrained(format: PHONE_FORMAT)
+    attribute :name,    Types::String
+    attribute :email,   Types::String #.constrained(format: EMAIL_FORMAT)
+    attribute :message, Types::String
+    attribute :phone,   Types::String #.constrained(format: PHONE_FORMAT)
   end
 end

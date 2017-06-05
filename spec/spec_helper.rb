@@ -7,10 +7,10 @@ require 'rspec/hanami'
 
 RSpec.configure do |config|
   config.include RSpec::Hanami::Matchers
-  config.include RSpec::Hanami::RequestHelpers
+  # config.include RSpec::Hanami::RequestHelpers
 
-  config.use_transactional_fixtures = false
-  config.infer_spec_type_from_file_location!
+  # config.use_transactional_fixtures = false
+  # config.infer_spec_type_from_file_location!
 end
 
 Hanami.boot
